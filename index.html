@@ -176,67 +176,7 @@
     .proof { display: flex; gap: 10px; align-items: center; }
     .proof b { color: #fff; }
 
-    /* --- ENHANCED: Trust Badge Row (bold & premium) --- */
-    .trust-badge-row {
-      background: #0a1a2a;
-      padding: 22px 0;
-      border-bottom: 2px solid #d4b68a;
-      position: relative;
-      overflow: hidden;
-    }
-    .trust-badge-row::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, #d4b68a, #f0cf79, #d4b68a);
-      animation: shimmer 3s infinite linear;
-      background-size: 200% 100%;
-    }
-    @keyframes shimmer {
-      0% { background-position: -200% 0; }
-      100% { background-position: 200% 0; }
-    }
-    .trust-badge-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-      text-align: center;
-    }
-    .trust-badge-item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      font-size: 15px;
-      font-weight: 800;
-      color: #fff;
-      letter-spacing: .03em;
-      padding: 6px 0;
-      position: relative;
-    }
-    .trust-badge-item .icon {
-      font-size: 24px;
-      filter: drop-shadow(0 2px 8px rgba(212, 182, 138, 0.3));
-    }
-    .trust-badge-item .label {
-      background: linear-gradient(135deg, #f0cf79, #d4b68a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      font-weight: 800;
-    }
-    .trust-badge-item .sub {
-      font-size: 11px;
-      font-weight: 500;
-      color: #b0c4d0;
-      -webkit-text-fill-color: #b0c4d0;
-      display: block;
-      margin-top: 2px;
-    }
-
+    /* Trust strip - kept */
     .trust-strip {
       background: #f3eee6;
       padding: 22px 0;
@@ -392,7 +332,7 @@
     }
     .card-link:hover { border-bottom-color: #a67c4e; }
 
-    /* --- ENHANCED: Premium Group Discount Banner --- */
+    /* Premium Group Discount Banner */
     .group-discount {
       background: linear-gradient(135deg, #0a1a2a, #1a3a4a);
       color: #fff;
@@ -995,7 +935,6 @@
 
     @media (max-width: 1050px) {
       .trek-grid { grid-template-columns: repeat(2,1fr); }
-      .trust-badge-grid { grid-template-columns: repeat(2,1fr); }
     }
     @media (max-width: 900px) {
       .navlinks { display: none; }
@@ -1009,7 +948,6 @@
       .gallery button:first-child { grid-row: span 1; }
       .gallery button:nth-child(4) { grid-column: auto; }
       .steps { grid-template-columns: 1fr 1fr; }
-      .trust-badge-grid { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 620px) {
       .container { width: calc(100% - 24px); }
@@ -1056,9 +994,6 @@
       .copyright span { display: block; margin-top: 6px; }
       .stats-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
       .trust-grid { grid-template-columns: 1fr; }
-      .trust-badge-grid { grid-template-columns: 1fr 1fr; }
-      .trust-badge-item { font-size: 13px; }
-      .trust-badge-item .icon { font-size: 20px; }
       .trusted-logos { gap: 20px; }
       .trusted-logos img { height: 40px; max-width: 100px; }
       .comparison-table th, .comparison-table td { padding: 10px 12px; font-size: 12px; }
@@ -1112,28 +1047,7 @@
       </div>
     </section>
 
-    <!-- ENHANCED: Bold Premium Trust Badge Row -->
-    <section class="trust-badge-row">
-      <div class="container trust-badge-grid">
-        <div class="trust-badge-item">
-          <span class="icon">✅</span>
-          <div><span class="label">100% Local Team</span></div>
-        </div>
-        <div class="trust-badge-item">
-          <span class="icon">💰</span>
-          <div><span class="label">Best Price Guarantee</span></div>
-        </div>
-        <div class="trust-badge-item">
-          <span class="icon">📞</span>
-          <div><span class="label">24/7 Support</span></div>
-        </div>
-        <div class="trust-badge-item">
-          <span class="icon">🔄</span>
-          <div><span class="label">Free Cancellation</span></div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Trust strip - kept -->
     <section class="trust-strip">
       <div class="container trust-grid">
         <div class="trust-item"><span class="check">✓</span><span><b>Local knowledge</b><br />On-the-ground support</span></div>
@@ -1168,12 +1082,12 @@
 
         <div class="trek-grid" id="trekGrid"></div>
 
-        <!-- ENHANCED: Premium Animated Group Discount Banner -->
+        <!-- Premium Animated Group Discount Banner -->
         <div class="group-discount">
           <div class="content">
-            <span class="icon-big">➤</span>
+            <span class="icon-big">🏔️</span>
             <span class="text">
-              <span class="discount-badge">7% OFF</span>
+              <span class="discount-badge">10% OFF</span>
               <span style="margin:0 8px;">for groups of</span>
               <span class="highlight">4+ people</span>
             </span>
@@ -1589,8 +1503,6 @@ Thank you.`;
         100% { opacity: 0.5; transform: scale(0.9); }
       }
       @media (max-width: 620px) {
-        .trust-badge-row .trust-badge-grid { grid-template-columns: 1fr 1fr; }
-        .trust-badge-item { font-size: 12px; }
         [style*="position: fixed; top: 85px;"] { display: none; }
       }
     `;

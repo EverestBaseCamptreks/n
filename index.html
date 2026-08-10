@@ -871,11 +871,12 @@
       </div>
     </section>
 
+    <!-- GALLERY SECTION WITH UPDATED IMAGES -->
     <section class="section" id="gallery">
       <div class="container">
         <div class="section-head">
           <div><div class="kicker">From the trail</div><h2>Real places. Real moments.</h2></div>
-          <p>Replace these sample images with your own original trekking and client photographs. That real-world proof is one of your strongest trust signals.</p>
+          <p>Authentic images from our treks — this is the real Nepal experience.</p>
         </div>
         <div class="gallery" id="galleryGrid"></div>
       </div>
@@ -893,15 +894,41 @@
       </div>
     </section>
 
+    <!-- TEAM SECTION WITH REAL IMAGES -->
     <section class="section" id="team">
       <div class="container">
         <div class="section-head"><div><div class="kicker">The people behind the journey</div><h2>People you can actually talk to.</h2></div><p>Meet the people who plan, guide and support our journeys across Nepal.</p></div>
         <div class="team-row">
-          <article class="team-person"><div class="team-avatar"><img src="https://ibb.co/nhFjCnS" alt="co-founder" /></div><div class="team-role">Co-Founder</div><h3>Gaurab sapkota</h3><p>Leading operations with 3+ years of experience in the Himalaya. Passionate about responsible travel and authentic cultural exchange.</p></article>
-          <article class="team-person"><div class="team-avatar"><img src="https://ibb.co/YT7S3wwM" alt="Senior Guide & Operations Head" /></div><div class="team-role">Senior Guide & Operations Head</div><h3>Govinda sapkota</h3><p>Manages guest experience and itinerary design. She ensures every traveller feels prepared, informed and supported.</p></article>
-          <article class="team-person"><div class="team-avatar"><img src="https://ibb.co/GvxD97NT" alt="senior guide" /></div><div class="team-role">Senior Guide · Operations</div><h3>Srijan Bhatta</h3><p>20+ years guiding in Everest, Annapurna and Manaslu. Expert in logistics, weather planning and keeping groups safe.</p></article>
-          <article class="team-person"><div class="team-avatar"><img src="https://ibb.co/1tWLr1Z8" alt="guide" /></div><div class="team-role">Trekking Guide</div><h3>Gopa Magar</h3><p>Born in Solukhumbu. His local knowledge and warm hospitality make every trek memorable. Speaks fluent English and Nepali.</p></article>
-          <article class="team-person"><div class="team-avatar"><img src="hhttps://ibb.co/DHxYx9RR" alt="mountain guide" /></div><div class="team-role">Mountain Guide</div><h3>Raju kadel</h3><p>IFMGA certified guide with 14 high-altitude expeditions. Specializes in technical routes, glacier travel and altitude management.</p></article>
+          <article class="team-person">
+            <div class="team-avatar"><img src="https://i.ibb.co/nhFjCnS/IMG-2280.jpg" alt="Gaurab Sapkota" /></div>
+            <div class="team-role">Co-Founder</div>
+            <h3>Gaurab Sapkota</h3>
+            <p>3+ years in Nepal’s tourism industry, carrying forward a family legacy. Leads client communication, trip planning and business operations, ensuring every journey is well planned and personally supported.</p>
+          </article>
+          <article class="team-person">
+            <div class="team-avatar"><img src="https://i.ibb.co/8LkMLc5Q/5e6067f5-cf13-4d82-8482-cbebe8884cae.jpg" alt="Govinda Sapkota" /></div>
+            <div class="team-role">Senior Guide & Operations Head</div>
+            <h3>Govinda Sapkota</h3>
+            <p>20+ years in Nepal tourism, with extensive experience across the country’s trekking routes. Leads client care, communication, itinerary planning and overall trip operations.</p>
+          </article>
+          <article class="team-person">
+            <div class="team-avatar"><img src="https://i.ibb.co/GvxD97NT/IMG-2282.jpg" alt="Srijan Bhatta" /></div>
+            <div class="team-role">Senior Guide · Operations</div>
+            <h3>Srijan Bhatta</h3>
+            <p>5+ years of guiding experience across Nepal, with extensive knowledge of the country’s major trekking routes and a strong focus on safe, well-organized journeys.</p>
+          </article>
+          <article class="team-person">
+            <div class="team-avatar"><img src="https://i.ibb.co/1tWLr1Z8/IMG-2283.jpg" alt="Gopa Magar" /></div>
+            <div class="team-role">Trekking Guide</div>
+            <h3>Gopa Magar</h3>
+            <p>Born in Tanahu, with 7+ years of experience guiding across Nepal. Specializing in the Annapurna and Everest regions, his local knowledge and warm hospitality make every trek memorable..</p>
+          </article>
+          <article class="team-person">
+            <div class="team-avatar"><img src="https://i.ibb.co/DHxYx9RR/IMG-2284.jpg" alt="Raju Kadel" /></div>
+            <div class="team-role">Mountain Guide</div>
+            <h3>Raju Kadel</h3>
+            <p>10+ years of experience, with 6,000m+ expeditions across Nepal. Specializing in advanced routes including Manaslu, Kanchenjunga and Everest Three Passes.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -1020,26 +1047,28 @@
 
   <script>
     const WA = "9779766481043";
+    // Trek data with your specific images
     const treks = [
-      ["Everest Base Camp Trek", "14–16 Days", "Everest", "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=85"],
-      ["Annapurna Base Camp Trek", "10–12 Days", "Annapurna", "https://images.unsplash.com/photo-1516026672322-bc52d61ea9f7?auto=format&fit=crop&w=1200&q=85"],
-      ["Annapurna Circuit Trek", "12–18 Days", "Annapurna", "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=85"],
-      ["Manaslu Circuit Trek", "13–18 Days", "Manaslu", "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=85"],
-      ["Langtang Valley Trek", "7–10 Days", "Langtang", "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85"],
-      ["Poon Hill Trek", "4–6 Days", "Annapurna", "https://images.unsplash.com/photo-1470214304380-aadaedcfff1b?auto=format&fit=crop&w=1200&q=85"],
-      ["Kanchenjunga Trek", "18–24 Days", "Kanchenjunga", "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"],
-      ["Everest Gokyo Trek", "15–17 Days", "Everest", "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=85"],
-      ["Everest Three Passes Trek", "18–22 Days", "Everest", "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=85"],
-      ["Mardi Himal Trek", "5–8 Days", "Annapurna", "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85"]
+      ["Everest Base Camp Trek", "14–16 Days", "Everest", "https://i.ibb.co/S7Qf5ssx/everest-trek.jpg"],
+      ["Annapurna Base Camp Trek", "10–12 Days", "Annapurna", "https://i.ibb.co/DDNR1B7x/abc-trek.jpg"],
+      ["Annapurna Circuit Trek", "12–18 Days", "Annapurna", "https://i.ibb.co/C59jnrfW/annapurna-circuit.jpg"],
+      ["Manaslu Circuit Trek", "13–18 Days", "Manaslu", "https://i.ibb.co/TqmKXh6f/manaslu-trek.jpg"],
+      ["Langtang Valley Trek", "7–10 Days", "Langtang", "https://i.ibb.co/JW89zXXT/langtang-trek.jpg"],
+      ["Poon Hill Trek", "4–6 Days", "Annapurna", "https://i.ibb.co/4gR4ck55/poon-hill.jpg"],
+      ["Kanchenjunga Trek", "18–24 Days", "Kanchenjunga", "https://i.ibb.co/0wZTJDg/kanchenjunga.jpg"],
+      ["Everest Gokyo Trek", "15–17 Days", "Everest", "https://i.ibb.co/zTMFsCFZ/everest-three-pass.jpg"],
+      ["Everest Three Passes Trek", "18–22 Days", "Everest", "https://i.ibb.co/zTMFsCFZ/everest-three-pass.jpg"],
+      ["Mardi Himal Trek", "5–8 Days", "Annapurna", "https://i.ibb.co/bgyNKL3b/mardi-himal.jpg"]
     ];
+    // Updated gallery with your 7 new images
     const gallery = [
-      "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1400&q=85",
-      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1000&q=85",
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85",
-      "https://images.unsplash.com/photo-1516026672322-bc52d61ea9f7?auto=format&fit=crop&w=1200&q=85",
-      "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=85",
-      "https://images.unsplash.com/photo-1470214304380-aadaedcfff1b?auto=format&fit=crop&w=1000&q=85",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
+      "https://i.ibb.co/jZx0jRf1/514028615-10162563690892412-571465161532612086-n.jpg",
+      "https://i.ibb.co/bMDytP3d/513616533-10162563690952412-790372058872371373-n.jpg",
+      "https://i.ibb.co/ksJ9zNn8/508562044-10162523689387412-8787954395799946612-n.jpg",
+      "https://i.ibb.co/n8Q3FmZv/472233578-10161974515322412-9066923115481006546-n.jpg",
+      "https://i.ibb.co/mVrJNBZS/471551066-10161937825747412-6140657546837842036-n.jpg",
+      "https://i.ibb.co/r2n1Lzgq/649845162-10163715243642412-2297866953886339383-n.jpg",
+      "https://i.ibb.co/5WgmTwST/546594786-10162927429442412-6903646908164231372-n.jpg"
     ];
 
     const trekGrid = document.getElementById("trekGrid");

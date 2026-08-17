@@ -103,12 +103,12 @@
       background: #0a1a2a;
       overflow: hidden;
     }
-    /* Background image with cinematic zoom & pan */
+    /* Background image with Nims Dai — cinematic zoom & pan */
     .hero-media {
       position: absolute;
       inset: 0;
       background: 
-        url("https://i.ibb.co/7xZPvNnR/himalaya-bg.jpg") center/cover no-repeat;
+        url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIyBGoEr2eozTsrc-FLJZmWqxvvxntYC5lqWXqKiXG3k91rMLBYI2N38m2cWy3jv-mIivHWGmy6Q8Yx75FFpbDJ8UGPLUUrGu0taWRSO8Jv0nQB-I3BQMCfTxncVoN9deO6Nb-HYpbgxDHHVEK3T_J_Pw0YunspIyhXS_XFo-cKpSLLUxYdq_6pbjNtQ/s700/nimsdai.jpeg") center/cover no-repeat;
       animation: cinematicZoomPan 22s infinite alternate ease-in-out;
       will-change: transform;
       transform: scale(1.02);
@@ -117,12 +117,12 @@
       0% { transform: scale(1.02) translateX(0) translateY(0); }
       100% { transform: scale(1.08) translateX(-1.5%) translateY(-0.5%); }
     }
-    /* subtle gradient overlay only on lower-left where text sits */
+    /* Darker overlay for better text readability */
     .hero-media::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(10,26,42,0.25) 0%, rgba(10,26,42,0.05) 40%, transparent 70%);
+      background: linear-gradient(135deg, rgba(10,26,42,0.55) 0%, rgba(10,26,42,0.15) 50%, rgba(10,26,42,0.05) 80%);
       pointer-events: none;
     }
 
@@ -138,13 +138,13 @@
     /* Main text — small, elegant, positioned lower-left, no giant card */
     .hero-text-group {
       max-width: 600px;
-      background: rgba(10, 26, 42, 0.20);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
+      background: rgba(10, 26, 42, 0.30);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
       padding: 20px 28px;
       border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
       margin-bottom: 28px;
     }
     .hero-text-group .main-line {
@@ -1677,7 +1677,6 @@ Thank you.`;
       e.stopPropagation();
       popup.classList.add('hidden');
     });
-    // optional: reappear after 60s if closed
     let reappearTimer;
     closeBtn.addEventListener('click', function() {
       clearTimeout(reappearTimer);
